@@ -1,69 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     android:background="@color/mainBackgroundColor"
+    android:orientation="horizontal"
     tools:context=".view.MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
         android:background="@drawable/fully_rounded_rectangle"
-        android:padding="8dp"
-        android:layout_margin="16dp"
-        android:layout_weight="1"
-        android:gravity="center">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <DatePicker
-            android:id="@+id/datePicker"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:calendarViewShown="false"
-            android:datePickerMode="spinner"
-            android:layout_marginBottom="8dp"
-            android:minDate="01/01/1946"
-            android:maxDate="12/31/2012"/>
 
-        <Button
-            android:id="@+id/buttonSelectDate"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/buttonColor"
-            android:fontFamily="sans-serif-light"
-            android:text="@string/select_date_landscape"
-            android:textColor="@color/buttonTextColor"
-            app:cornerRadius="50dp"
-            android:layout_below="@id/datePicker"
-            android:layout_alignStart="@+id/datePicker"
-            android:layout_alignEnd="@+id/datePicker" />
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:maxDate="12/31/2012"
+        android:minDate="01/01/1946"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSelectDate"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
 
-        <Button
-            android:id="@+id/buttonHistory"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/buttonColor"
-            android:fontFamily="sans-serif-light"
-            android:text="@string/history"
-            android:textColor="@color/buttonTextColor"
-            app:cornerRadius="50dp"
-            android:layout_below="@id/buttonSelectDate"
-            android:layout_alignStart="@+id/datePicker"
-            android:layout_alignEnd="@+id/datePicker" />
-    </RelativeLayout>
+    <Button
+        android:id="@+id/buttonSelectDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/buttonColor"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/select_date_landscape"
+        android:textColor="@color/buttonTextColor"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonHistory"
+        app:layout_constraintEnd_toEndOf="@+id/datePicker"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/datePicker"
+        app:layout_constraintTop_toBottomOf="@+id/datePicker" />
+
+    <Button
+        android:id="@+id/buttonHistory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/buttonColor"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/history"
+        android:textColor="@color/buttonTextColor"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSelectDate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/buttonSelectDate"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSelectDate" />
 
 
     <TextView
         android:id="@+id/textViewDate"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="sans-serif-light"
         android:gravity="center"
         android:text="@string/text_example"
-        android:textSize="40sp"
         android:textColor="@color/textResultColor"
-        android:fontFamily="sans-serif-light" />
-</LinearLayout>
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+</androidx.constraintlayout.widget.ConstraintLayout>
