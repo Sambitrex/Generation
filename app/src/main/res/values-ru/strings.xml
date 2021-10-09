@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Поколения</string>
+    <string name="history">История</string>
+    <string name="select_date">Выбрать дату</string>
+    <string name="select_date_landscape">Выбрать</string>
+
+    <string-array name="month_names">
+        <item>ЯНФ</item>
+        <item>ФЕВ</item>
+        <item>МАР</item>
+        <item>АПР</item>
+        <item>МАЙ</item>
+        <item>ИЮН</item>
+        <item>ИЮЛ</item>
+        <item>АВГ</item>
+        <item>СЕН</item>
+        <item>ОКТ</item>
+        <item>НОЯ</item>
+        <item>ДЕК</item>
+    </string-array>
+
+    <string-array name="generations">
+        <item>Бэби-бумер</item>
+        <item>Поколение X</item>
+        <item>Поколение Y</item>
+        <item>Поколение Z</item>
+    </string-array>
+</resources>

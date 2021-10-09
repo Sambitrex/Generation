@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="textResultColor">@color/white</color>
+    <color name="datePickerBackgroundColor">#0099F9</color>
+    <color name="buttonColor">#0087e0</color>
+    <color name="mainBackgroundColor">#191919</color>
+    <color name="buttonTextColor">@color/white</color>
+
+
+</resources>

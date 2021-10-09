@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/mainBackgroundColor"
+    tools:context=".view.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fully_rounded_rectangle"
+        android:padding="8dp"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/buttonSelectDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/buttonColor"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/select_date_landscape"
+            android:textColor="@color/buttonTextColor"
+            app:cornerRadius="50dp"
+            android:layout_below="@id/datePicker"
+            android:layout_alignStart="@+id/datePicker"
+            android:layout_alignEnd="@+id/datePicker" />
+
+        <Button
+            android:id="@+id/buttonHistory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/buttonColor"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/history"
+            android:textColor="@color/buttonTextColor"
+            app:cornerRadius="50dp"
+            android:layout_below="@id/buttonSelectDate"
+            android:layout_alignStart="@+id/datePicker"
+            android:layout_alignEnd="@+id/datePicker" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="JAN 01 2012 \n Z generation"
+        android:textSize="40sp"
+        android:textColor="@color/textResultColor"
+        android:fontFamily="sans-serif-light" />
+</LinearLayout>
