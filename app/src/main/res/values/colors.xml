@@ -18,7 +18,6 @@
     <color name="buttonColor">#6FC4EC</color>
     <color name="mainBackgroundColor">@color/white</color>
     <color name="buttonTextColor">@color/black</color>
-    <color name="rippleBackground">@color/white</color>
-
-
+    <color name="rippleBackgroundColor">@color/white</color>
+    <color name="noItemsTextColor">@color/black</color>
 </resources>

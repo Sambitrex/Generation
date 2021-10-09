@@ -24,7 +24,9 @@
             android:layout_height="wrap_content"
             android:calendarViewShown="false"
             android:datePickerMode="spinner"
-            android:layout_marginBottom="8dp"/>
+            android:layout_marginBottom="8dp"
+            android:minDate="01/01/1946"
+            android:maxDate="12/31/2012"/>
 
         <Button
             android:id="@+id/buttonSelectDate"
@@ -60,7 +62,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="JAN 01 2012 \n Z generation"
+        android:text="@string/text_example"
         android:textSize="40sp"
         android:textColor="@color/textResultColor"
         android:fontFamily="sans-serif-light" />

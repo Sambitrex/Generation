@@ -4,6 +4,10 @@
     <string name="select_date">Select date</string>
     <string name="select_date_landscape">Select</string>
     <string name="message_select_date">Select date</string>
+    <string name="clean_history">Clean history</string>
+    <string name="empty">Empty</string>
+    <string name="text_example" translatable="false">Text Example</string>
+    <string name="deleteIcon" translatable="false">Delete Icon</string>
 
     <string-array name="month_names">
         <item>JAN</item>

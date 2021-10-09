@@ -14,10 +14,10 @@ import com.read.generation.database.HistoryItem;
 import java.util.Locale;
 
 public class MainActivityViewModel extends AndroidViewModel {
-    private MutableLiveData<HistoryItem> lastAdded;
-    private HistoryDatabase database;
-    private String[] monthNames;
-    private String[] generations;
+    private final MutableLiveData<HistoryItem> lastAdded;
+    private final HistoryDatabase database;
+    private final String[] monthNames;
+    private final String[] generations;
 
     public MainActivityViewModel(@NonNull Application application) {
         super(application);

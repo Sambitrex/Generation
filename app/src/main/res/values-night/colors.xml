@@ -5,8 +5,6 @@
     <color name="buttonColor">#0087e0</color>
     <color name="mainBackgroundColor">#191919</color>
     <color name="buttonTextColor">@color/white</color>
-    <color name="rippleBackground">#424242</color>
-
-
-
+    <color name="rippleBackgroundColor">#424242</color>
+    <color name="noItemsTextColor">@color/white</color>
 </resources>

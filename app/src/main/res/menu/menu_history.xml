@@ -3,6 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/deleteAllHistoryItems"
-        android:title="Clean history"
+        android:title="@string/clean_history"
         app:showAsAction="never"/>
 </menu>

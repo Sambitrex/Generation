@@ -1,16 +1,11 @@
 package com.read.generation.view;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
@@ -26,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonSelectDate;
     private Button buttonHistory;
 
-    private Observer<HistoryItem> historyItemObserver = item -> {
+    private final Observer<HistoryItem> historyItemObserver = item -> {
         if (item != null) {
             textViewDate.setText(item.result + "\n" + item.date);
         } else {

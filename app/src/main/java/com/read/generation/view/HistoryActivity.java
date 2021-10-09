@@ -26,11 +26,11 @@ public class HistoryActivity extends AppCompatActivity {
     private HistoryItemAdapter historyItemAdapter;
     private TextView textViewNoItems;
 
-    private HandleDeleteClick deleteHandler = item -> {
+    private final HandleDeleteClick deleteHandler = item -> {
         viewModel.deleteHistoryItem(item);
     };
 
-    private Observer<List<HistoryItem>> observer = historyItems -> {
+    private final Observer<List<HistoryItem>> observer = historyItems -> {
         if (historyItems != null) {
             historyItemAdapter.setHistoryItemsList(historyItems);
         } else {

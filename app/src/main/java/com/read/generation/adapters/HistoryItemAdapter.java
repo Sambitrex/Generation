@@ -18,7 +18,7 @@ import java.util.List;
 
 
 public class HistoryItemAdapter extends RecyclerView.Adapter<HistoryItemAdapter.HistoryItemViewHolder> {
-    private Context context;
+    private final Context context;
     private List<HistoryItem> historyItemsList;
     HistoryActivity.HandleDeleteClick deleteHandler;
 

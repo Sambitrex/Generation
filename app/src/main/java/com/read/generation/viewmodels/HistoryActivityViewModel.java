@@ -12,8 +12,8 @@ import com.read.generation.database.HistoryItem;
 import java.util.List;
 
 public class HistoryActivityViewModel extends AndroidViewModel {
-    private MutableLiveData<List<HistoryItem>> historyItemList;
-    private HistoryDatabase historyDatabase;
+    private final MutableLiveData<List<HistoryItem>> historyItemList;
+    private final HistoryDatabase historyDatabase;
 
 
     public HistoryActivityViewModel(@NonNull Application application) {
@@ -43,8 +43,6 @@ public class HistoryActivityViewModel extends AndroidViewModel {
 
     private void getAllHistoryItems() {
         List<HistoryItem> listOfItems = historyDatabase.historyDao().getAllHistoryItems();
-
-        System.out.println(listOfItems.size());
 
         if (listOfItems.size() > 0) {
             historyItemList.setValue(listOfItems);
