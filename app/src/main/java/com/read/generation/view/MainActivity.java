@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         if (item != null) {
             textViewDate.setText(item.result + "\n" + item.date);
         } else {
-            textViewDate.setText("Select date");
+            textViewDate.setText(R.string.message_select_date);
         }
     };
 

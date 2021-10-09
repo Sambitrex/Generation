@@ -4,6 +4,7 @@
     <string name="history">История</string>
     <string name="select_date">Выбрать дату</string>
     <string name="select_date_landscape">Выбрать</string>
+    <string name="message_select_date">Выберите дату</string>
 
     <string-array name="month_names">
         <item>ЯНФ</item>

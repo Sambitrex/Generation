@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 import com.read.generation.R;
 import com.read.generation.database.HistoryItem;
-import com.read.generation.recyclerview.HistoryItemAdapter;
+import com.read.generation.adapters.HistoryItemAdapter;
 import com.read.generation.viewmodels.HistoryActivityViewModel;
 
 import java.util.List;

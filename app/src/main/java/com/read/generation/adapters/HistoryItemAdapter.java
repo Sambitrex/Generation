@@ -1,4 +1,4 @@
-package com.read.generation.recyclerview;
+package com.read.generation.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
