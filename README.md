@@ -1,5 +1,8 @@
 # Generation
 
+## APK
+[Click](https://github.com/Sambitrex/Generation/blob/master/apk/app-debug.apk)
+
 ## App preview
 <img src="https://github.com/Sambitrex/Generation/blob/master/app_preview/main%20activtity(portrait%20mode).png" alt="MainActivity(portrait)"  width="288">
 <img src="https://github.com/Sambitrex/Generation/blob/master/app_preview/main%20activity(landscape%20mode).png" alt="MainActivity(landscape)"  width="592">
